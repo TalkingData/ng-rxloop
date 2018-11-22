@@ -68,9 +68,7 @@ import { Store } from 'ng-rxloop';
   styleUrls: ['./user.component.scss']
 })
 export class DatasourceComponent {
-  constructor(private store: Store) { 
-
-  }
+  constructor(private store: Store) {}
   getUser() {
     this.store.dispatch({
       type: 'user/getUser',
