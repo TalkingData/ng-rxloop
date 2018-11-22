@@ -57,7 +57,18 @@ export class User {
 }
 ```
 
-4. 在业务组件之中
+4. 定义 Action
+
+```typescript
+export class GetUserAction {
+  readonly type: string = 'user/getUser';
+  constructor(private id: string) {
+    this.payload = id
+  }
+}
+```
+
+5. 在业务组件之中
 ```typescript
 import { Component } from '@angular/core';
 import { Store } from 'ng-rxloop';
@@ -80,13 +91,3 @@ export class DatasourceComponent {
 }
 ```
 
-5. 定义 Action
-
-```typescript
-export class GetUserAction {
-  readonly type: string = 'user/getUser';
-  constructor(private id: string) {
-    this.payload = id
-  }
-}
-```
