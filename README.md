@@ -41,7 +41,7 @@ export class User {
   info2(state) { return state }
 
   @pipe
-  getData(action$, { map, dispatch }) {
+  getUser(action$, { map, dispatch }) {
     return action$;
   }
 
