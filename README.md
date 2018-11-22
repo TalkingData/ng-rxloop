@@ -84,7 +84,7 @@ export class DatasourceComponent {
 
 ```typescript
 export class GetUserAction {
-  readonly type = 'user/getUser';
+  readonly type: string = 'user/getUser';
   constructor(private id: string) {
     this.payload = id
   }
