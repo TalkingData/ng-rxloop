@@ -74,6 +74,8 @@ export class DatasourceComponent {
       type: 'user/getUser',
       payload: 1,
     });
+    // 或者通过 new Action 的方式
+    // this.store.dispatch(new GetUserAction(1));
   }
 }
 ```
