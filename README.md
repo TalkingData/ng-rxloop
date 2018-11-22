@@ -79,3 +79,14 @@ export class DatasourceComponent {
   }
 }
 ```
+
+5. 定义 Action
+
+```typescript
+export class GetUserAction {
+  readonly type = 'user/getUser';
+  constructor(private id: string) {
+    this.payload = id
+  }
+}
+```
