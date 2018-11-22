@@ -4,14 +4,14 @@
 ## 安装
 1. 通过 npm 安装
 ```bash
-$ npm i @rxloop/store
+$ npm i ng-rxloop
 ```
 
 2. 在入口模块里引入 `RxloopModule`
 
 ```typescript
 import { NgModule } from '@angular/core';
-import { RxloopModule } from '@rxloop/store';
+import { RxloopModule } from 'ng-rxloop';
 import { UserModel, DatasetModel, ProjectModel } from './models';
 ​
 @NgModule({
@@ -29,7 +29,7 @@ export class AppModule {}
 3. 定义 UserModel
 
 ```typescript
-import { model, reducer, pipe } from '@rxloop/store';
+import { model, reducer, pipe } from 'ng-rxloop';
 
 @model({
   a: 1,
@@ -60,7 +60,7 @@ export class User {
 4. 在业务组件之中
 ```typescript
 import { Component } from '@angular/core';
-import { Store } from '@rxloop/store';
+import { Store } from 'ng-rxloop';
 
 @Component({
   selector: 'app-user',
