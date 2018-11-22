@@ -2,8 +2,12 @@
 状态：设计阶段草案，相关 api 待讨论。
 
 ## 安装
+1. 通过 npm 安装
+```bash
+$ npm i @rxloop/store
+```
 
-1. 在入口模块里引入 `RxloopModule`
+2. 在入口模块里引入 `RxloopModule`
 
 ```typescript
 import { NgModule } from '@angular/core';
@@ -22,7 +26,7 @@ import { UserModel, DatasetModel, ProjectModel } from './models';
 export class AppModule {}
 ```
 
-2. 定义 UserModel
+3. 定义 UserModel
 
 ```typescript
 import { model, reducer, pipe } from '@rxloop/store';
@@ -53,7 +57,7 @@ export class User {
 }
 ```
 
-3. 在业务组件之中
+4. 在业务组件之中
 ```typescript
 import { Component } from '@angular/core';
 import { Store } from '@rxloop/store';
